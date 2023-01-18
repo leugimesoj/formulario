@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="titulo">
+        <h1>Formulario</h1>
+      </section>
+      <section class="formulario">
+
+        
+          <div class="first-name--container" id="first-name--container">
+            <p class="first-name__titulo">First Name</p>
+            <input type="text" name="firstName" id="firstName" />
+          </div>
+
+          <div class="last-name--container" id="last-name--container">
+            <p class="last-name__titulo">Last Name</p>
+            <input type="text" name="lastName" id="lastName" />
+          </div>
+          <div class="birthday-date" id="birthday-date--container">
+            <p class="birthday-date__titulo">Birthday Day</p>
+            <input type="date" name="birthdayDate" id="birthdayDate" />
+          </div>
+          <fieldset class="genero" id="genero--container">
+            <legend>Selecciona tu genero</legend>
+            <div class="genero--masculino">
+              <input type="radio" name="sexo" id="inputMasculino" />
+              <label for="masculino">Masculino</label>
+            </div>
+            <div class="genero--femenino">
+              <input type="radio" name="sexo" id="inputFemenino" />
+              <label for="Femenino">Femenino</label>
+            </div>
+          </fieldset>
+
+          <div class="country" id="country--container">
+            <label for="country-select">escoge tu ciudad:</label>
+
+            <select name="country" id="country-select">
+              <option value="">--Please choose an option--</option>
+              <option value="cdmx">CDMX</option>
+              <option value="Merida, Yucatan">Merida</option>
+              <option value="Tuxtla G., Chiapas">Tuxtla Gutierrez Chiapas</option>
+              <option value="Saltillo, Colima">Saltillo Coahuila</option>
+              
+            </select>
+          </div>
+
+          <div class="lenguajes-programacion" id="lenguajes-prodramacion--container">
+            <label for="lenguajes-select">Lenguajes de programacion</label><br>
+            <input type="checkbox" id="checkbox__Js" value="Js"> <label for="checkbox__Js">Js</label>
+            <input type="checkbox" id="checkbox__python" value="Python"> <label for="checkbox__python">Python</label>
+            <input type="checkbox" id="checkbox__C" value="C"> <label for="checkbox__C">C</label>
+            <input type="checkbox" id="checkbox__C++" value="C++"> <label for="checkbox__C++">C++</label>
+          </div>
+          <div class="description" id="descripcion--container">
+            <p class="description__titulo">Description</p>
+            <textarea name="description" id="text-area__descripcion" cols="40" rows="5"></textarea>
+          </div>
+
+      </section>
+
+      <button class="Enviar" onclick="validacion()" type="button">Enviar</button>
+    </main>
+    <script src="code.js"></script>
+  </body>
+</html>
